@@ -4,7 +4,13 @@ import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoMdCloseCircleOutline } from "react-icons/io";
 import { IoCloseCircleOutline } from "react-icons/io5";
-import { CiSearch } from "react-icons/ci";
+
+import Button from "../button/page";
+import Input from "../input/page";
+import { Slider } from "@mui/material";
+import SliderSizes from "../sliders/page";
+import ResetButton from "../resetbutton/page";
+import SearchButton from "../searchbutton/page";
 
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,8 +29,9 @@ const BurgerMenu = () => {
       <div
         className={`${
           isOpen ? "translate-x-0" : "-translate-x-full"
-        } fixed top-0 left-0 w-2/5 h-full bg-white shadow-lg transition-transform duration-300 ease-in-out z-40   `}
+        } fixed top-0 left-0 w-2/5 h-full bg-white shadow-lg transition-transform duration-300 ease-in-out z-40 overflow-auto  `}
       >
+        {" "}
         <div className="flex justify-between items-center  p-5">
           <div className="bg-[#F78410] text-white font-semibold rounded-lg   p-3">
             TOURS
@@ -37,35 +44,65 @@ const BurgerMenu = () => {
           </div>
         </div>
         <div className=" px-5 flex flex-col gap-4 py-3">
-          <div className="text-2xl font-semibold">Location</div>
-          <div className="relative">
-            <input
-              className="border-2 border-black w-full p-2 rounded-lg  "
-              type="text"
-              placeholder="Where you wanna visit?"
-            />
-
-            <div className="absolute top-1 right-3 ">
-              <CiSearch size={30} />
+          <div className="text-xl font-semibold">Location</div>
+          <Input />
+        </div>
+        <div className=" px-5 flex flex-col gap-4 py-3   ">
+          <div>
+            <p className="text-xl font-semibold">Theme</p>
+          </div>
+          <div className="flex gap-5 flex-wrap">
+            <Button text={"Island Tour"} />
+            <Button text={"Land Tour"} />
+            <Button text={"Safari"} />
+          </div>
+        </div>
+        <div className="px-5 flex flex-col gap-4 py-3">
+          <h2 className="text-xl font-semibold">Activity</h2>
+          <div className="flex gap-5 flex-wrap ">
+            <Button text={"Swimming"} />
+            <Button text={"Runnig"} />
+            <Button text={"Elephant care"} />
+            <Button text={"Snorkelling"} />
+          </div>
+        </div>
+        <div className="px-5 gap-4 py-3 flex flex-col justify-center">
+          <div>
+            <h2 className="text-xl font-semibold">Price</h2>
+            <SliderSizes />
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold">Start Time</h2>
+            <SliderSizes />
+          </div>
+          <div>
+            <h2 className="text-xl font-semibold">Group Size</h2>
+            <SliderSizes />
+          </div>
+        </div>
+        <div className="px-5 flex flex-col  gap-4 py-3      ">
+          <h2 className="text-xl font-semibold">Vehicle</h2>
+          <div className="flex gap-5 flex-wrap">
+            <Button text={"Yacht"} />
+            <Button text={"Speedboat"} />
+            <Button text={"Safari"} />
+            <Button text={"Speedcatamaran"} />
+            <Button text={"Catamaran"} />
+          </div>
+        </div>
+        <div>
+          <div className="px-5 flex flex-col  gap-4 py-3      ">
+            <h2 className="text-xl font-semibold">Features</h2>
+            <div className="flex gap-5 flex-wrap">
+              <Button text={"Vegetarian food"} />
+              <Button text={"Halal Food"} />
+              <Button text={"Transfer"} />
             </div>
           </div>
         </div>
-        <div className=" px-5 flex flex-col gap-4 py-3 ">
-          <div>
-            <p className="text-2xl font-semibold">Theme</p>
-          </div>
-          <div className="flex  gap-5  ">
-            <button className="border p-2 px-10 rounded-lg bg-[#E07516] ">
-              Island Tour
-            </button>
-            <button className="border p-2 px-10 rounded-lg bg-[#E07516]">
-              {" "}
-              Land Tour
-            </button>
-            <button className="border p-2 px-10 rounded-lg bg-[#E07516]">
-              Safari
-            </button>
-          </div>
+        <div className="flex justify-end p-5 gap-10 py-10 ">
+          <ResetButton />
+          <SearchButton />
         </div>
       </div>
 

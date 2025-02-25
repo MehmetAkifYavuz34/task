@@ -1,9 +1,12 @@
 import React from "react";
-import Header from "./components/header/page";
-import BurgerMenu from "./components/burgerMenu/page";
+import Tours from "./pages/tours/page";
 
 const page = () => {
-  return <div></div>;
+  return (
+    <div>
+      <Tours />
+    </div>
+  );
 };
 
 export default page;

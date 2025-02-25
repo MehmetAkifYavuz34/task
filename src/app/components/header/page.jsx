@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import image from "@/app/assets/image.png";
 import { TfiWorld } from "react-icons/tfi";
@@ -10,7 +10,7 @@ import image2 from "@/app/assets/image2.png";
 import BurgerMenu from "../burgerMenu/page";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <header className=" flex justify-between items-center ">
       <div className="flex items-center p-5 gap-2">

@@ -1,0 +1,104 @@
+{
+  "tours": [
+    {
+      "id": 1,
+      "title": "Island Adventure",
+      "location": "Bahamas",
+      "price": 750,
+      "duration": "5 days",
+      "startTime": "2025-06-15T09:00:00",
+      "groupSize": 12,
+      "description": "Explore the beautiful islands with crystal clear waters and sandy beaches."
+    },
+    {
+      "id": 2,
+      "title": "Safari Expedition",
+      "location": "Kenya",
+      "price": 1200,
+      "duration": "7 days",
+      "startTime": "2025-07-20T08:30:00",
+      "groupSize": 8,
+      "description": "Experience wildlife up close in the vast savannah of Kenya."
+    },
+    {
+      "id": 3,
+      "title": "Cultural Tour",
+      "location": "Italy",
+      "price": 950,
+      "duration": "6 days",
+      "startTime": "2025-05-10T10:00:00",
+      "groupSize": 15,
+      "description": "Discover historical sites, art, and cuisine in various Italian cities."
+    },
+    {
+      "id": 4,
+      "title": "Mountain Hiking",
+      "location": "Switzerland",
+      "price": 1100,
+      "duration": "4 days",
+      "startTime": "2025-08-05T07:45:00",
+      "groupSize": 10,
+      "description": "Challenge yourself with breathtaking hikes in the Swiss Alps."
+    },
+    {
+      "id": 5,
+      "title": "Desert Safari",
+      "location": "Dubai",
+      "price": 500,
+      "duration": "3 days",
+      "startTime": "2025-09-12T06:30:00",
+      "groupSize": 20,
+      "description": "Enjoy dune bashing and sunset views in the Arabian desert."
+    },
+    {
+      "id": 6,
+      "title": "Rainforest Retreat",
+      "location": "Costa Rica",
+      "price": 800,
+      "duration": "5 days",
+      "startTime": "2025-07-01T09:15:00",
+      "groupSize": 14,
+      "description": "Immerse yourself in nature with guided rainforest tours and wildlife spotting."
+    },
+    {
+      "id": 7,
+      "title": "City Escape",
+      "location": "New York",
+      "price": 1300,
+      "duration": "4 days",
+      "startTime": "2025-10-03T10:30:00",
+      "groupSize": 18,
+      "description": "Experience the vibrant city life with tours of iconic landmarks and neighborhoods."
+    },
+    {
+      "id": 8,
+      "title": "Historical Journey",
+      "location": "Greece",
+      "price": 900,
+      "duration": "6 days",
+      "startTime": "2025-06-25T08:00:00",
+      "groupSize": 16,
+      "description": "Visit ancient ruins and enjoy the Aegean culture with expert guides."
+    },
+    {
+      "id": 9,
+      "title": "Coastal Cruise",
+      "location": "Caribbean",
+      "price": 1500,
+      "duration": "7 days",
+      "startTime": "2025-11-10T07:00:00",
+      "groupSize": 22,
+      "description": "Sail the Caribbean seas and explore multiple tropical islands."
+    },
+    {
+      "id": 10,
+      "title": "Winter Wonderland",
+      "location": "Canada",
+      "price": 1400,
+      "duration": "5 days",
+      "startTime": "2025-12-15T09:30:00",
+      "groupSize": 10,
+      "description": "Enjoy ski resorts and snowy landscapes in Canada's winter paradise."
+    }
+  ]
+}
